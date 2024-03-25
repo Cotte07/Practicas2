@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="388.0" style="-fx-background-color: brown;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller2">
+   <children>
+      <Label layoutX="28.0" layoutY="35.0" text="Numero vuelo" textFill="#fffafa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="83.0" text="Ciudad Origen" textFill="#e9e8e8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="132.0" text="Ciudad Destino" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="177.0" text="Codigo Avion" textFill="#f8f8f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idNumVuelo" editable="false" layoutX="201.0" layoutY="37.0" />
+      <TextField fx:id="idCidOrigen" editable="false" layoutX="201.0" layoutY="85.0" />
+      <TextField fx:id="idCidDestino" editable="false" layoutX="201.0" layoutY="134.0" />
+      <TextField fx:id="idCodAvion" editable="false" layoutX="201.0" layoutY="179.0" />
+      <Button fx:id="idSiguiente2" layoutX="286.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#clicSiguiente2" text="Siguiente" />
+      <Button fx:id="idAtras1" layoutX="31.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#clicAtras1" text="Atras" />
+   </children>
+   <effect>
+      <Lighting diffuseConstant="1.01" specularConstant="0.79" specularExponent="10.23" surfaceScale="1.73">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant>
+               <color>
+                  <Color red="0.008799999952316284" green="0.7360894680023193" blue="0.8799999952316284" />
+               </color>
+            </Light.Distant>
+         </light>
+      </Lighting>
+   </effect>
+</AnchorPane>
